@@ -2,7 +2,7 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "The REST API provides an interface to a registry with operations for saving, versioning, reading NiFi flows and components.",
-    "version" : "2.0.0-SNAPSHOT",
+    "version" : "1.21.0",
     "title" : "Apache NiFi Registry REST API",
     "termsOfService" : "As described in the license",
     "contact" : {
@@ -443,12 +443,6 @@
           "schema" : {
             "$ref" : "#/definitions/Bucket"
           }
-        }, {
-          "name" : "preserveSourceProperties",
-          "in" : "query",
-          "description" : "Whether source properties like identifier should be kept",
-          "required" : false,
-          "type" : "boolean"
         } ],
         "responses" : {
           "200" : {
@@ -1172,12 +1166,6 @@
           "schema" : {
             "$ref" : "#/definitions/VersionedFlowSnapshot"
           }
-        }, {
-          "name" : "preserveSourceProperties",
-          "in" : "query",
-          "description" : "Whether source properties like author should be kept",
-          "required" : false,
-          "type" : "boolean"
         } ],
         "responses" : {
           "200" : {
